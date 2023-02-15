@@ -12,9 +12,6 @@
     "type": "git",
     "url": "git@github.com:farco-studio/interactions-zoom-scroll.git"
   },
-  "parcelOptions": {
-    "hashFiles": false
-  },
   "keywords": [],
   "author": "Marina Gallardo",
   "license": "MIT",
