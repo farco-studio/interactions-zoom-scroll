@@ -100,7 +100,7 @@
 
   .zoom-scroll {
     overflow: hidden;
-    margin-bottom: 20vh;
+    padding-bottom: 20vh;
   }
 
   .title {
