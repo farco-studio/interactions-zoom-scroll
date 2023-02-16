@@ -30,6 +30,16 @@ const loadingIntro = () => {
     };
   };
 
+  const scrollTriggerConfigMobile = (trigger) => {
+    return {
+      trigger: trigger,
+      start: "top 50%",
+      end: "top 20%",
+      scrub: true,
+    };
+  };
+
+
   const scrollTriggerTextConfig = (trigger) => {
     return {
       trigger: trigger,
@@ -39,18 +49,40 @@ const loadingIntro = () => {
     };
   };
 
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    gsap.to(titleSpan, {
+      scrollTrigger: scrollTriggerTextConfig(imagesContainer),
+      opacity: 0,
+      top: -35 + "vh",
+      scaleY: 3,
+      transformOrigin: "50% 50%",
+    });
+  } else {
+    gsap.to(titleSpan, {
+      scrollTrigger: {
+        trigger: imagesContainer,
+        start: "top 50%",
+        end: "top 20%",
+        scrub: true,
+      },
+      opacity: 0,
+      top: -35 + "vh",
+      scaleY: 3,
+      transformOrigin: "50% 50%",
+    });
+  }
+
+  if (window.matchMedia("(min-width: 768px)").matches) {
   gsap.to(imagesContainer, {
     scrollTrigger: scrollTriggerConfig(imagesContainer),
     scale: 1.5,
   });
-
-  gsap.to(titleSpan, {
-    scrollTrigger: scrollTriggerTextConfig(imagesContainer),
-    opacity: 0,
-    top: -35 + "vh",
-    scaleY: 3,
-    transformOrigin: "50% 50%",
-  });
+    } else {
+        gsap.to(imagesContainer, {
+            scrollTrigger: scrollTriggerConfigMobile(imagesContainer),
+            scale: 1.2,
+        });
+    }
 
   gsap.to(title, {
     scrollTrigger: scrollTriggerTextConfig(imagesContainer),

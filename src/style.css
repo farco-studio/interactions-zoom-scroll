@@ -6,8 +6,7 @@
     --bodycopy-lh: 24px;
     --font-base: "Inter", sans-serif;
     --font-display: "Oswald", sans-serif;
-    --title-l: 172px;
-    --title-l: 11.5vw;
+    --title-l: 11vw;
     --title-lh: 135px;
   }
   
@@ -135,12 +134,12 @@
     transform: scale(1.05) translateY(100px);
     height: calc(100vh - 16px);
     transition-timing-function: cubic-bezier(.96,-0.01,.15,1);
+    padding-bottom: 80px;;
   }
 
   @media screen and (max-width: 767px) {
     .images-container {
         margin-top: 0;
-        padding-bottom: 40px;;
     }
 
     .title {
