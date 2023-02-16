@@ -34,7 +34,7 @@ const loadingIntro = () => {
     return {
       trigger: trigger,
       start: "40% bottom",
-      end: "80% bottom",
+      end: "100% bottom",
       scrub: true,
     };
   };
@@ -49,7 +49,10 @@ const loadingIntro = () => {
     {
       scrollTrigger: scrollTriggerTextConfig(imagesContainer),
       opacity: 0,
-      top: -100
+      top: -30 + 'vh',
+        scaleY: 3,
+        transformOrigin: "50% 50%",
+
     },
   );
 };
