@@ -161,7 +161,10 @@
     object-fit: cover;
   }
 
-  .cover {
+  .cover img {
     border-radius: 8px;
+  }
+
+  .cover {
     overflow: hidden;
   }
