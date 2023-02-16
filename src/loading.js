@@ -44,17 +44,19 @@ const loadingIntro = () => {
     scale: 1.2,
   });
 
-  gsap.to(
-    titleSpan,
-    {
-      scrollTrigger: scrollTriggerTextConfig(imagesContainer),
-      opacity: 0,
-      top: -30 + 'vh',
-        scaleY: 3,
-        transformOrigin: "50% 50%",
+  gsap.to(titleSpan, {
+    scrollTrigger: scrollTriggerTextConfig(imagesContainer),
+    opacity: 0,
+    top: -35 + "vh",
+    scaleY: 3,
+    transformOrigin: "50% 50%",
+  });
 
-    },
-  );
+
+  gsap.to(title, {
+    scrollTrigger: scrollTriggerTextConfig(imagesContainer),
+    
+  });
 };
 
 export { loadingIntro };
