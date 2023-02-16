@@ -233,7 +233,7 @@
 
   .cover img {
     border-radius: 8px;
-    mix-blend-mode: multiply;    
+    mix-blend-mode: hard-light;    
   }
 
   .cover {
@@ -242,9 +242,9 @@
   }
 
   .noise {
-    mix-blend-mode: multiply;
+    mix-blend-mode: hard-light;
     background-image: url('../images/noise.gif');
-    opacity: 0.2;
+    opacity: 0.18;
     position: absolute;
     right: 0;
   }
