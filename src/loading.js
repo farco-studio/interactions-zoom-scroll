@@ -41,7 +41,7 @@ const loadingIntro = () => {
 
   gsap.to(imagesContainer, {
     scrollTrigger: scrollTriggerConfig(imagesContainer),
-    scale: 1.2,
+    scale: 1.5,
   });
 
   gsap.to(titleSpan, {
@@ -51,7 +51,6 @@ const loadingIntro = () => {
     scaleY: 3,
     transformOrigin: "50% 50%",
   });
-
 
   gsap.to(title, {
     scrollTrigger: scrollTriggerTextConfig(imagesContainer),
