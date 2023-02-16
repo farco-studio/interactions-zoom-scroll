@@ -25,7 +25,7 @@ const loadingIntro = () => {
     return {
       trigger: trigger,
       start: "40% bottom",
-      end: "100% bottom",
+      end: "150% bottom",
       scrub: true,
     };
   };
