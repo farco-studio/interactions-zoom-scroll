@@ -1,4 +1,4 @@
-# Interactions Zoom Sctoll
+# Interactions Zoom Scroll
 
 Free, refined interactions to inspire our community and make the web a more beautiful place.
 
