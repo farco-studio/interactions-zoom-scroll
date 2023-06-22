@@ -4,7 +4,7 @@
 
 Free, refined interactions to inspire our community and make the web a more beautiful place.
 
-[Demo](https://interactions-zoom-scroll.onrender.com/)
+[Demo](https://interactions-zoom-scroll-h7rr.onrender.com)
 
 
 ## Installation
